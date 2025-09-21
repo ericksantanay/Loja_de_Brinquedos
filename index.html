@@ -20,8 +20,8 @@
                 <li>Contato</li>
             </ul>
             <span id="menu_burguer" class="material-symbols-outlined">menu</span>
-            <span class="material-symbols-outlined">bedtime<span>
-            <span class="material-symbols-outlined">shopping_cart</span>
+            <span id="tema_escuro" class="material-symbols-outlined">bedtime<span>
+            <span id="compras" class="material-symbols-outlined">shopping_cart</span>
         </nav> <!--Nav Final-->
 
         <div class="mobile_menu"> <!--Mobile menu / Inicio-->
@@ -42,7 +42,7 @@
         </div> <!--Div background / Fim-->
         <section class="brinq"> <!--Section brinquedos / Inicio-->
             <h1>Brinquedos</h1>
-            <div id="container_brinquedos"> <!--Div container dos brinquedos / Inicio-->
+            <div class="container_brinquedos"> <!--Div container dos brinquedos / Inicio-->
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
                     <h2>Urso de Pelúcia</h2>
                     <img src="img/fotos-brinquedos/foto-brinquedo1.jpg" alt="foto urso de pelucia">
@@ -53,42 +53,65 @@
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
                     <h2>Bola de Volei</h2>
                     <img src="img/fotos-brinquedos/foto-brinquedo2 (2).jpg" alt="foto urso de pelucia">
+                    <p>R$ 30,00</p>
+                    <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                </article> <!--Brinquedos / Fim-->
+
+                <article class="brinquedos"> <!--Brinquedos / Inicio-->
+                    <h2>Trator de brinquedo</h2>
+                    <img src="img/fotos-brinquedos/foto-brinquedo3.jpg" alt="trator de brinquedo">
                     <p>R$ 50,90</p>
                     <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
                 </article> <!--Brinquedos / Fim-->
 
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
-                    <h2>Urso de Pelúcia</h2>
-                    <img src="img/fotos-brinquedos/foto-brinquedo3.jpg" alt="foto urso de pelucia">
-                    <p>R$ 50,90</p>
+                    <h2>Pista de carrinhos</h2>
+                    <img src="img/fotos-brinquedos/foto-brinquedo4-pista-de-carrinho.jpg" alt="Pista de carrinhos">
+                    <p>R$ 110,00</p>
                     <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
                 </article> <!--Brinquedos / Fim-->
 
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
-                    <h2>Urso de Pelúcia</h2>
-                    <img src="img/fotos-brinquedos/foto-brinquedo4-pista-de-carrinho.jpg" alt="foto urso de pelucia">
-                    <p>R$ 50,90</p>
+                    <h2>Bonecos de Madeira</h2>
+                    <img src="img/fotos-brinquedos/foto-brinquedo5-madeira.jpg" alt="Boneco de madeira">
+                    <p>R$ 150,59</p>
                     <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
                 </article> <!--Brinquedos / Fim-->
 
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
-                    <h2>Urso de Pelúcia</h2>
-                    <img src="img/fotos-brinquedos/foto-brinquedo5-madeira.jpg" alt="foto urso de pelucia">
-                    <p>R$ 50,90</p>
-                    <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
-                </article> <!--Brinquedos / Fim-->
-
-                <article class="brinquedos"> <!--Brinquedos / Inicio-->
-                    <h2>Urso de Pelúcia</h2>
-                    <img src="img/fotos-brinquedos/foto-brinquedo6 (2).jpg" alt="foto urso de pelucia">
-                    <p>R$ 50,90</p>
+                    <h2>Cubo Magico</h2>
+                    <img src="img/fotos-brinquedos/foto-brinquedo6 (2).jpg" alt="Cubo Magico">
+                    <p>R$ 10,00</p>
                     <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
                 </article> <!--Brinquedos / Fim-->
             </div> <!--Div container dos brinquedos / Fim-->
         </section> <!--Section brinquedos / Fim-->
+
+        <section> <!--Sobre A loja / Inicio-->
+            <div class="contaiener_sobre">
+                <article id="Sobre_loja"> <!--Article / Inicio-->
+                    <h2>Sobre a nossa loja 🧸✨</h2>
+                    <p>Bem-vindo à Brinquedolândia!
+                       Aqui acreditamos que brincar é uma das formas mais especiais de aprender, sonhar e se divertir. Nossa missão é oferecer brinquedos que despertem a imaginação, estimulem a criatividade e tragam alegria para crianças de todas as idades.
+                    </p>
+
+                    <p>
+                        Em nossa loja, você encontra desde clássicos como carrinhos e bonecas até opções modernas, educativas e interativas.     Trabalhamos sempre para garantir produtos de qualidade, com segurança e carinho em cada detalhe.
+                    </p>
+
+                    <p>
+                        Além de brinquedos, também buscamos criar uma experiência única para nossos clientes. Pensamos em cada detalhe: desde a escolha dos produtos, o cuidado na embalagem até o atendimento atencioso. Nosso objetivo é que cada visita à Brinquedolândia seja uma jornada mágica para crianças e adultos.
+                    </p>
+
+                    <p>
+                        Porque aqui na Brinquedolândia, a diversão nunca acaba! 🚀
+                    </p>
+                </article> <!--Article / Fim-->
+            </div>
+        </section> <!--Sobre A loja / Fim-->
     </main> <!--Main fim-->
     <footer> <!--Footer / Inicio-->
-
+        
     </footer> <!--Footer / Fim
 </body>
 </html>
