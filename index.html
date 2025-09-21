@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon" />
 </head>
 <body>
-    <header id="#inicio"> <!--Header / Inicio-->
+    <header class="he" id="#inicio"> <!--Header / Inicio-->
         <nav> <!--Nav / Inicio-->
              <span id="menu_burguer" class="material-symbols-outlined" onclick="ClickMenu()">menu</span>
             <img src="img/logo.png" alt="logo">
@@ -20,8 +20,21 @@
                 <li><a href="##sobre">Sobre</a></li>
                 <li><a href="##contatos">Contato</a></li>
             </ul>
-            <span id="tema_escuro" class="material-symbols-outlined" onclick="tema()">bedtime<span>
-            <span id="compras" class="material-symbols-outlined">shopping_cart</span>
+
+            
+                <div class="temas_carrinho">
+                    <span id="tema_claro" class="material-symbols-outlined" onclick="claro()">clear_day</span>
+                </div>
+
+                <div class="temas_carrinho">
+                    <span id="tema_escuro" class="material-symbols-outlined" onclick="temaEscuro()">bedtime<span></span>
+                </div>
+                
+                <div class="temas_carrinho">
+                    <span id="compras" class="material-symbols-outlined">shopping_cart</span>
+                    <span id="cont">0</span>
+                </div>
+            
         </nav> <!--Nav Final-->
 
         <div id="mobile_menu"> <!--Mobile menu / Inicio-->
@@ -40,47 +53,68 @@
         </div> <!--Div background / Fim-->
         <section class="brinq"> <!--Section brinquedos / Inicio-->
             <h1>Brinquedos</h1>
-            <div id="#brinquedos" class="container_brinquedos"> <!--Div container dos brinquedos / Inicio-->
+            <div id="#brinquedos"  class="container_brinquedos"> <!--Div container dos brinquedos / Inicio-->
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
                     <h2>Urso de Pelúcia</h2>
                     <img src="img/fotos-brinquedos/foto-brinquedo1.jpg" alt="foto urso de pelucia">
                     <p>R$ 50,90</p>
-                    <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="adiciona" type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="remove" type="button" value="Remover do carrinho" onclick="remover()">
                 </article> <!--Brinquedos / Fim-->
 
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
                     <h2>Bola de Volei</h2>
                     <img src="img/fotos-brinquedos/foto-brinquedo2 (2).jpg" alt="foto urso de pelucia">
                     <p>R$ 30,00</p>
-                    <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="adiciona" type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="remove" type="button" value="Remover do carrinho" onclick="remover()">
                 </article> <!--Brinquedos / Fim-->
-
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
                     <h2>Trator de brinquedo</h2>
                     <img src="img/fotos-brinquedos/foto-brinquedo3.jpg" alt="trator de brinquedo">
                     <p>R$ 50,90</p>
-                    <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="adiciona" type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="remove" type="button" value="Remover do carrinho" onclick="remover()">
                 </article> <!--Brinquedos / Fim-->
 
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
                     <h2>Pista de carrinhos</h2>
                     <img src="img/fotos-brinquedos/foto-brinquedo4-pista-de-carrinho.jpg" alt="Pista de carrinhos">
                     <p>R$ 110,00</p>
-                    <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="adiciona" type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="remove" type="button" value="Remover do carrinho" onclick="remover()">
                 </article> <!--Brinquedos / Fim-->
 
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
                     <h2>Bonecos de Madeira</h2>
                     <img src="img/fotos-brinquedos/foto-brinquedo5-madeira.jpg" alt="Boneco de madeira">
                     <p>R$ 150,59</p>
-                    <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="adiciona" type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="remove" type="button" value="Remover do carrinho" onclick="remover()">
                 </article> <!--Brinquedos / Fim-->
 
                 <article class="brinquedos"> <!--Brinquedos / Inicio-->
                     <h2>Cubo Magico</h2>
                     <img src="img/fotos-brinquedos/foto-brinquedo6 (2).jpg" alt="Cubo Magico">
                     <p>R$ 10,00</p>
-                    <input type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="adiciona" type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="remove" type="button" value="Remover do carrinho" onclick="remover()">
+                </article> <!--Brinquedos / Fim-->
+
+                <article class="brinquedos"> <!--Brinquedos / Inicio-->
+                    <h2>Skate</h2>
+                    <img src="img/fotos-brinquedos/skate-brinquedo.jpg" alt="Skate">
+                    <p>R$ 90,00</p>
+                    <input class="adiciona" type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="remove" type="button" value="Remover do carrinho" onclick="remover()">
+                </article> <!--Brinquedos / Fim-->
+
+                <article class="brinquedos"> <!--Brinquedos / Inicio-->
+                    <h2>Robo</h2>
+                    <img src="img/fotos-brinquedos/robo-brinquedo.jpg" alt="Robo">
+                    <p>R$ 210,00</p>
+                    <input class="adiciona" type="button" value="Adicionar ao carrinho" onclick="adicionar()">
+                    <input class="remove" type="button" value="Remover do carrinho" onclick="remover()">
                 </article> <!--Brinquedos / Fim-->
             </div> <!--Div container dos brinquedos / Fim-->
         </section> <!--Section brinquedos / Fim-->
@@ -119,6 +153,7 @@
     </footer> <!--Footer / Fim-->
 
     <script>
+            // Função para o menu Mobile
         function ClickMenu(){
             if (mobile_menu.style.display == 'block'){
                 mobile_menu.style.display = 'none'
@@ -126,19 +161,34 @@
                 mobile_menu.style.display = 'block'
             }
         }
-
-        function tema(){
-            var indice = 0;
-            if (tema_escuro = 'indice') {
+            // Função Para tema escuro
+        function temaEscuro(){
                 document.body.style.color = 'white'
                 document.body.style.background = '#121212'
-            }else if(indice > 'indice'){
-                indice++
-                document.body.style.color = 'black'
-                document.body.style.background = 'white'
-            }
-            
         }
+            // Função para o tema Claro
+        function claro(){
+            document.body.style.color = 'black'
+            document.body.style.background = '#e4e4e452'
+        } 
+               
+        
+        // Contador adicionar 
+        var contador = 0
+         var r = document.getElementById('cont')
+
+        function adicionar(){
+            contador++;
+            r.innerText = (`${contador}` )
+        }
+
+         // Contador remover
+        function remover(){
+            contador--;
+            r.innerText = (`${contador}`)
+        }
+
+        
     </script>
 </body>
 </html>
