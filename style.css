@@ -89,7 +89,7 @@ header #mobile_menu ul{
 
 header #mobile_menu ul li,a {
     font-family: var(--font_menu);
-    color: #000;
+    color: var(--branco);
     padding: 10px;
     text-decoration: none;
 }
@@ -118,6 +118,7 @@ main .brinq {
     margin-top: 10%;
     padding: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
 }
 
 main .brinq h1 {
@@ -134,7 +135,6 @@ main .brinq .container_brinquedos {
 }
 
 main .brinq .container_brinquedos .brinquedos {
-    
     text-align: center;
 }
 
@@ -149,6 +149,12 @@ main .brinq .container_brinquedos .brinquedos h2 {
 main .brinq .container_brinquedos .brinquedos img {
     width:220px;
     height: 220px;
+}
+
+main .brinq .container_brinquedos .brinquedos p {
+    font-family: var(--font_preços);
+    padding: 10px;
+    font-weight: 600;
 }
 
 main .brinq .container_brinquedos .brinquedos .adiciona {
@@ -173,23 +179,51 @@ main .brinq .container_brinquedos .brinquedos .remove {
     margin-left: 5px;
 }
 
+/* Main sobre a lojinha*/
 main .section_sobre {
     margin-top: 4%;
 }
 
 
-main .section_sobre .contaiener_sobre{
-    padding: 10px;
+main .section_sobre .contaiener_sobre {
+    border-radius: 4px;
+    padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+main .section_sobre .contaiener_sobre #Sobre_loja h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: var(--font_titulos);
+    padding: 20px;
+    
+}
 
+main .section_sobre .contaiener_sobre #Sobre_loja > p {
+    font-size: 19px;
+    font-family: var(--font_menu);
+    line-height: 40px;
+    margin-bottom: 15px;
+}
 
+/*Footer*/
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--azul_claro);
+    color: var(--preto);
+    font-family: var(--font_menu);
+    font-size: 1.4rem;
+    padding: 20px;
+}
 
+footer h3 {
+    padding: 10px;
+}
 
-
-
-
+footer p {
+    padding: 10px;
+}
 
 
 
@@ -212,5 +246,30 @@ main .section_sobre .contaiener_sobre{
     header nav #menu_burguer {
         display: block;
         font-size: 40px;
+    }
+
+    /*Main*/
+
+    main {
+        padding: 130px 3%;
+    }
+
+    main .foto_fundo {
+        width: 100%;
+        background-image: url(img/fotos-brinquedos/foto-brinquedo-fundo.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    /*Footer*/
+    
+    footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
     }
 }
