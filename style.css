@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-
-
+/*Root*/
+:root{
+    /*Fontes*/
+    --font_menu: "Merriweather", serif;
+    --font_titulos: "Oswald", sans-serif;
+    --font_subtitulo: "Bebas Neue", sans-serif;
+    --font_preços: "SUSE Mono", sans-serif;
+    /*Cores*/
+    --amarelo: #FFD93D;
+    --laranja: #FF6B35;
+    --azul_claro: #6EC5E9;
+    --Verde_menta: #8FD694; 
+    --branco: #FFFFFF
+    --preto: #000;
+}
 
 /*Header / Cabeçalho*/
 header {
