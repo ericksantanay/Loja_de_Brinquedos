@@ -12,7 +12,7 @@
 <body>
     <header id="#inicio"> <!--Header / Inicio-->
         <nav> <!--Nav / Inicio-->
-             <span id="menu_burguer" class="material-symbols-outlined">menu</span>
+             <span id="menu_burguer" class="material-symbols-outlined" onclick="ClickMenu()">menu</span>
             <img src="img/logo.png" alt="logo">
             <ul>
                 <li><a href="##inicio">Inicio</a></li>
@@ -20,19 +20,17 @@
                 <li><a href="##sobre">Sobre</a></li>
                 <li><a href="##contatos">Contato</a></li>
             </ul>
-            <span id="tema_escuro" class="material-symbols-outlined">bedtime<span>
+            <span id="tema_escuro" class="material-symbols-outlined" onclick="tema()">bedtime<span>
             <span id="compras" class="material-symbols-outlined">shopping_cart</span>
         </nav> <!--Nav Final-->
 
-        <div class="mobile_menu"> <!--Mobile menu / Inicio-->
+        <div id="mobile_menu"> <!--Mobile menu / Inicio-->
             <ul>
                 <li><a href="##inicio">Inicio</a></li>
                 <li><a href="##brinquedos">Brinquedos</a></li>
                 <li><a href="##sobre">Sobre</a></li>
                 <li><a href="##contato">Contato</a></li>
             </ul>
-            <span class="material-symbols-outlined">bedtime<span>
-            <span class="material-symbols-outlined">shopping_cart</span>
         </div> <!--Mobile Menu / Fim-->
 
     </header> <!--Header Fim-->
@@ -118,6 +116,29 @@
         </div>
 
         <p>&copy; Brinquedolândia LTDA. Todos os direitos reservados.</p>
-    </footer> <!--Footer / Fim
+    </footer> <!--Footer / Fim-->
+
+    <script>
+        function ClickMenu(){
+            if (mobile_menu.style.display == 'block'){
+                mobile_menu.style.display = 'none'
+            }else{
+                mobile_menu.style.display = 'block'
+            }
+        }
+
+        function tema(){
+            var indice = 0;
+            if (tema_escuro = 'indice') {
+                document.body.style.color = 'white'
+                document.body.style.background = '#121212'
+            }else if(indice > 'indice'){
+                indice++
+                document.body.style.color = 'black'
+                document.body.style.background = 'white'
+            }
+            
+        }
+    </script>
 </body>
 </html>
