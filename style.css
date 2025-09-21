@@ -24,13 +24,26 @@
     --preto: #000;
 }
 
+/*Seletor Geral*/
+*{
+    padding: 0;
+    margin: 0;
+    display: flexbox;
+}
+
 /*Header / Cabeçalho*/
 header {
-
+    width: 100%;
+    padding: 10px 7%;
 }
 
 header nav {
+    display: flex;
+    justify-content: space-between;
+}
 
+header nav ul{
+    
 }
 
 header nav img {
